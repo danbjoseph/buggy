@@ -1,0 +1,67 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#infoWrapper{
+    overflow: auto;
+}
+.container-fluid,
+.col-map{
+    padding: 0;
+}
+svg{
+    z-index: 9999;
+}
+.btn:focus,
+.btn:hover,
+.btn:active{
+    outline: 0 !important;
+}
+#tooltip{
+    font-size: 14px;
+    position: absolute;
+    z-index: 999;
+    padding: 2px;
+    color: #1a1a1a;
+    border-radius: 3px;
+    background-color: rgba(245,245,245,1);
+}
+#tooltip:empty{
+    display: none;
+}
+
+#infoText{
+    padding: 20px;
+}
+.selected-pump {
+    fill: yellow;
+}
+.mapped-pump {
+    cursor: pointer;
+}
+.mapped-buffer {
+    fill: blue;
+    opacity: 0.3;
+}
+
+
+    .slider-buffer-val, .slider-hh-count {
+        font: 400 18px Arial;
+        color: #888;
+        display: block;
+        margin-top: 18px;
+    }
+    .slider-hh-count:before {
+        content: "Houses within: ";
+        font: 700 18px Arial;
+    }
+    .slider-buffer-val:before {
+        content: "Buffer: ";
+        font: 700 18px Arial;
+    }
+    .slider-buffer-val:after {
+        content: " meters";
+        font: 400 18px Arial;
+    }
